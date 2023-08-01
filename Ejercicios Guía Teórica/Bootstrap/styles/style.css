@@ -1,0 +1,229 @@
+/**/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body.body-index{
+    width: 100%;
+    background-image: url("https://bruflor.es/blog/wp-content/uploads/2021/11/decoraci%C3%B3n-plantas-flores-estilo-minimalista-800x520.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-container{
+    top: 0%;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: fixed;
+    background-color: transparent;
+    z-index: 1;
+}
+
+/*Contenedor principal de la barra de navegación*/
+.nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0 0 0;
+    margin: 0 auto;
+}
+
+/* Menu de navegación Left*/
+.nav-main ul{
+    display: flex;
+}
+
+.nav-main ul li{
+    padding: 10px;
+    width: max-content;
+    
+}
+
+.nav-main ul li a{
+    padding: 3px;
+}
+
+.nav-main ul li a:hover{
+    /* border-bottom: 1px solid rgb(155, 62, 178) */
+    text-shadow: 2px 2px 7px coral;
+    color: coral;
+    transition: .5s;
+}
+
+a{
+    color: gray;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.iniciar{
+    text-align: center;
+    padding-top: 150px;
+}
+
+.iniciar p{
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Borel', cursive;
+    color: coral;
+}
+
+.iniciar a{
+    /* display: block; */
+    /* width: 100px; */
+    /* margin-left: 50%; */
+    font-size: small;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid coral;
+    border-radius: 10px;
+    color: coral;
+}
+
+.iniciar a:hover{
+    border: 1px solid coral;
+    background-color: coral;
+    border-radius: 10px;
+    color: white;
+    transition: .5s;
+}
+
+/*TABLA DE PRODUCTOS*/
+.iniciar-container-t{
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 45px;
+    width: 500px;
+}
+
+.table{
+    width: 85%;
+    border-color: coral;
+    border-radius: 10%;
+    padding: 15px;
+    opacity: 0.5;
+}
+
+.iniciar-container-t button {
+    color: coral;
+    border-color: coral;
+}
+
+.iniciar-container-t button:hover {
+    color: white;
+    background-color: coral;
+    border-color: coral;
+}
+
+.div-card {
+    display: flex;
+    /* padding-left: 45px; */
+    opacity: 0.8;
+}
+
+.card{
+    margin-left: 45px;
+}
+
+.card-img-top{
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+}
+
+.div-card button {
+    color: coral;
+    border-color: coral;
+}
+
+.div-card button:hover {
+    color: white;
+    background-color: coral;
+    border-color: coral;
+}
+
+/*FORMULARIO*/
+
+.iniciar-container-f{
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 45px;
+    width: 500px;
+}
+
+.iniciar-container-f input{
+    opacity: 0.5;
+}
+
+/*DETALLE DE PRODUCTO*/
+.iniciar-container-d{
+    /* display: inline-flex; */
+    display: flex;
+    height: 600px;
+    margin-top: 50px;
+    padding-top: 0px;
+    padding-left: 45px;
+    padding-right: 45px;
+    /* background-color: green; */
+}
+
+.detalle-prod{
+    display: inline-flex;
+    padding-right: 30px;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+}
+
+.detalle-prod div:last-of-type{
+    align-items: start;
+}
+
+.detalle-prod-info{
+    display: inline-flex;
+    padding-right: 30px;
+    width: 40%;
+    height: 100%;
+}
+
+.img-detalle {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 3%;
+    /* align-self: center; */
+}
+
+.detalle-content {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.detalle-content h3{
+    color: coral;
+}
+
+.detalle-content button {
+    width: 100%;
+    color: coral;
+    border-color: coral;
+}
+
+.detalle-content button:hover{
+    color: white;
+    background-color: coral;
+    border-color: coral;
+}

@@ -1,0 +1,27 @@
+h2{
+    color: green;
+}
+body{
+    background-color: white;
+}
+/* ORDEN DE RELEVANCIA */
+/* El más general por Tipo de elemento*/
+/* section{
+
+} */
+/* Un poco más especifico por clase */
+section.section{
+    background-color: blue;
+}
+/* Más especifico por Identificador ID */
+/* #section-one{
+
+} */
+/* Anidación  */
+#section-one p:first-of-type{
+    color: brown;
+}
+
+.link:hover{
+    color: green;
+}

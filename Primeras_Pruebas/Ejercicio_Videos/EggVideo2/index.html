@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <section>
+        <div>
+            <!-- El Form tiene atributos = El atributo action guía al fomulario hacia donde va mandar la información
+            El atribuo method que vamos a usar para enviar la información POST (envío de info)
+            El atribuo class para poder modificar esteticamente el formulario
+            El atribuo encTyp para anticipar que vamos a enviar imagenes tipo de datos complejos-->
+            <form action="/controlador-registro" method="post" class="form-registro" enctype="multipart/form-data">
+                <div>
+                    <label for="nombre"></label>
+                    <input name="nombre" type="text" placeholder="Nombre y apellido" required/>
+                </div>
+                <div>
+                    <label for="mail"></label>
+                    <input name="mail" type="mail" placeholder="micorreo@gmail.com" required/>
+                </div>
+                <div>
+                    <label for="number"></label>
+                    <input name="number" type="number" placeholder="7774291131" required/>
+                </div>
+                <div>
+                    <label for="contrasenia"></label>
+                    <input name="contrasenia" type="password" placeholder="Tu password" required/>
+                </div>
+                <div>
+                    <label for="femenino">Femenino</label>
+                    <input name="femenino" type="radio" value="f" />
+                    <label for="masculino">Masculino</label>
+                    <input name="masculino" type="radio" value="m" />
+                    <label for="other">Other</label>
+                    <input name="other" type="radio" value="o" />
+                </div>
+                <div>
+                    <label for="femenino">Femenino</label>
+                    <input name="femenino" type="checkbox" value="f" />
+                    <label for="masculino">Masculino</label>
+                    <input name="masculino" type="checkbox" value="m" />
+                    <label for="other">Other</label>
+                    <input name="other" type="checkbox" value="o" />
+                </div>
+                <div>
+                    <label for="pais">Pais de origen</label>
+                    <select name="pais" id="">
+                        <option value="mex">MEX</option>
+                        <option value="arg">ARG</option>
+                        <option value="col">COL</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="date">Fecha</label>
+                    <input name="date" type="date" />
+                </div>
+                <div>
+                    <label for="image">Imagen</label>
+                    <input name="image" type="file" />
+                </div>
+                <button type="submit">Enviar info</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
