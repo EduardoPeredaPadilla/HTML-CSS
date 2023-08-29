@@ -1,0 +1,76 @@
+/* Continuación */
+
+/* Normalize */
+/* Importamos el archivo css normalize.css */
+
+
+
+/* Teoría de Cajas */
+/* *{
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+}
+
+.contact-form {
+    font-size: 25px;
+}
+
+.contact-form__h2 {
+    font-size: 2em;
+    color: red;
+} */
+/* 
+    + En línea. Ocupa el ancho del elemento, están uno junto a otro
+        <b> ejemplo
+        Propiedades
+        A los elementos en línea no se les puede dar "height" (alto)
+        A los elementos en línea no se les puede dar "width" (ancho)
+    + En bloque. Ocupa el ancho de su contenedorm si es el body el ancho de todo el body
+        Propiedades
+        A los elementos en bloque si se les puede dar "height" (alto)
+        A los elementos en bloque si se les puede dar "width" (ancho)
+    + InLine-bloque. Se comporta como un elemento el línea pero puede aduirir las propiedades de uno en bloque
+
+*/
+/* h2{
+    display: inline;
+    height: 400px;
+    width: 190px;
+}
+P{
+    height: 400px;
+    width: 190px;
+} */
+
+/* Propiedades de cajas */
+*{
+    /* padding: 0;
+    margin: 0; */
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+h2{
+    background-color: red;
+    display: inline-block;
+    /* padding: 10px 50px;
+    height: 300px;
+    width: 300px; */
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 2em;
+    /* border: 10px solid blue; */
+    box-shadow: 0px 0px 10px 10px #000;
+    text-shadow: 2px 2px 7px #fff;
+    transform: rotate(-45deg);
+}
+
+/* Otras Propiedades */
+/* Outline 
+    ShortHand (Propiedad acortada)
+    Es como un borde pero que no ocupa un espacio real en el DOM (Document Object Model)
+    
+*/

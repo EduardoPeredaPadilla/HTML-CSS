@@ -1,0 +1,72 @@
+/*  Flexbox. Cajas flexibles
+    Se trabaja con direcciones 
+    + El eje horizontal es el main axis (main-start ... main-end...->) De isquierda a derecha
+    + El eje vertical es el cross axis (cross-start ... cross-end...->) De arriba hacia abajo Direcciones por defecto
+
+    + Flex container. El elemento que se declara par qu esus hijos tengas las propiedades, este se seguira comportanfdo en bloque
+    + Flex item. el hijo del container al que surten efecto las propiedades flex
+*/
+
+/* Propiedades
+
+    Las propiedades se aplican para afectar a los items(flex items), pero se declara en el contenedor (flex-container)
+
+    + flex-drection. Nos permite cambiar la dirección del main axis
+        
+        flex-drection: row; se comporta como filas, dirección horizontal de izq a derecha, sobre el eje main axis
+
+        flex-drection: column; se comporta com ocolumnas, dirección arriba hacia abajo, sobre el eje cross axis
+
+        flex-drection: row-reverse;. cambia la dirección, de derecha a izquierda
+
+    + flex-wrap. No wrap, wrap, wrap-reverse
+
+        wrap. Respeta el ancho y manda hacia abajo lo que no quepa en el espacio
+
+
+    + flex-flow.flex-direction, flex-wrap. Es un shortCut de direction y wrap
+
+    + Justify-content. center, space-around, space-between, space-evently (main axis)
+
+        Es para centrar el contenido
+
+    + Align-item. flex-start, center, flex-end, strech, baseline (cross axis)
+
+        Es para alinear verticalmente, sobre el eje cross axis
+
+    +aling-content.
+
+*/
+
+
+* {
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 100;
+}
+
+.flex-container{
+    display: flex;
+    /* flex-direction: column-reverse; */
+    /* flex-direction: column; */
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-content: flex-start;
+}
+
+.flex-item{
+    background-color: #148;
+    color: #fff;
+    margin: 5px;
+    height: 100px;
+    min-width: 120px;
+    text-align: center;
+}
+
+.orange{
+    background: orange;
+}
+
+.green{
+    background: green;
+}

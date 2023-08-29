@@ -1,0 +1,42 @@
+/*  TRANSFORM
+
+    + trasnsform: translateX(x) - translateY(y) - translate(x - x,y)
+        - si usamos porcentajes, son porcentajes relativos al elemento. Recomendado para animar
+
+    + trasnsform: scale(xy - x, y) -scaleX8x) - scaleY(y)
+
+    + trasnsform: rotate(angleUnit) - rotateX(angleUnit) - rotateZ(angleUnit) - rotate3D(angleUnit) || angleUnit - deg - grd - rad - turn
+
+    + transformn: skew(angleUnit)
+
+
+*/
+
+* {
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 100;
+}
+
+.container {
+    background: #86f;
+    padding: 20px 5px;
+}
+
+.caja {
+    background: #025;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    display: flex;
+    color: #fff;
+    /* transform: translate(100px, 100px); */
+    transition: transform 1s;
+    /* transform: skew(30deg); */
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+
+
+b {
+    margin: auto;
+}

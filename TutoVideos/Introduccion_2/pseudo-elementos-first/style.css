@@ -1,0 +1,29 @@
+/* Pseudo-Elemento 
+    No forman parte del DOM los que requieren la etiqueta content
+    *solo firts-line o first-letter
+    
+*/
+
+/* ::first-line. No funciona en inline
+    ::first-letter. No funciona en inline
+*/
+
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.texto{
+    padding: 20px;
+}
+
+.texto::first-line{
+    color: blue;
+    font-size: 2em;
+}
+
+.texto::first-letter{
+    color: blueviolet;
+    font-size: 4em;
+}

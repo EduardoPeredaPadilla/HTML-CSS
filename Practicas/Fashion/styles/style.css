@@ -1,0 +1,955 @@
+/* En el normaloiza ya reseteamos los stylos */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+
+.body-index {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #fff;
+    /* background: radial-gradient( #fff, #CEF202 ); */
+    
+    /* transition-duration: 3s; */
+    /* background-color: #CEF202; */
+    /* grid-template-rows: auto; */
+    /* height: 2000px; */
+    overflow-x: hidden;
+}
+
+*::selection{
+    background-color: #CEF202;
+}
+
+/* .body-index:hover {
+    background: radial-gradient( #fff, #CEF202);
+} */
+
+/* HEADER */
+
+.header {
+    display: flex;
+    /* width: 100%; */
+    height: 60px;
+    padding-top: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    z-index: 1000;
+    position: sticky;
+    top: 10px;
+}
+
+.nav__ul {
+    margin-bottom: 0;
+}
+
+
+.nav__li{
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 12px 24px;
+    color: #fff;
+}
+
+.bar-info {
+    /* background-color: red; */
+    position: absolute;
+    right: 0;
+    color: #000;
+}
+
+.nav__li:hover > a{
+    text-decoration: underline;
+    transition: .5s;
+
+}
+.nav__li:hover {
+    color: #bbb;
+}
+
+.nav__li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 7px;
+    font-weight: bold;
+}
+
+.selected a {
+    text-decoration: underline;
+}
+
+.nav img {
+    position: fixed;
+    left: 20px;
+    top: 10px;
+    width: 4vw;
+    min-width: 3em;
+    height: auto;
+    animation-name: rotarLogo;
+    animation-duration: 100s;
+    /* animation-timing-function: ease; */
+    /* animation-fill-mode: none; */
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    /* animation-direction: alternate; */
+}
+
+.nav img:hover{
+    animation-play-state: paused;
+}
+
+.label-fixed {
+    color: #000;
+    text-decoration: none;
+    font-size: 7px;
+    font-weight: bold;
+    position: fixed;
+    left: 25px;
+    bottom: 55px;
+}
+
+.label-fixed:hover {
+    text-decoration: underline;
+    transition: .5s;
+
+}
+
+.label-fixed-2 {
+    color: #000;
+    text-decoration: none;
+    font-size: 7px;
+    font-weight: bold;
+    position: fixed;
+    right: 25px;
+    bottom: 55px;
+}
+
+.label-fixed-2:hover, .label-fixed-3:hover, .label-fixed-4:hover, .label-fixed-5:hover  {
+    text-decoration: underline;
+    transition: .5s;
+
+}
+
+.label-fixed-3 {
+    color: #000;
+    /* text-decoration: none; */
+    font-size: 7px;
+    font-weight: bold;
+    position: fixed;
+    left: 25px;
+    top: 110px;
+}
+
+.label-fixed-4 {
+    color: #000;
+    text-decoration: none;
+    font-size: 7px;
+    font-weight: bold;
+    position: fixed;
+    left: 25px;
+    top: 140px;
+}
+
+.label-fixed-5 {
+    color: #000;
+    text-decoration: none;
+    font-size: 7px;
+    font-weight: bold;
+    position: fixed;
+    left: 25px;
+    top: 170px;
+}
+
+
+
+/* MAIN */
+
+.main {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title {
+    /* background-color: slateblue; */
+    width: 98vw;
+    height: 41%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    position: sticky;
+    top: 150px;
+}
+
+.main-title img {
+    object-fit: fill;
+    height: 100%;
+}
+
+
+
+.main-img1 {
+    width: 23%;
+    height: 23%;
+    align-self: center;
+    z-index: 900;
+    translate: 22vw -50px;
+}
+
+
+/* Main Container */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    /* background-color: gray; */
+    width: 73%;
+    align-self: center;
+    margin-top: 200px;
+}
+
+.container-img1 {
+    width: 43%;
+    height: 43%;
+    margin-bottom: 70px;
+}
+
+.container-img2 {
+    width: 43%;
+    height: 43%;
+    margin-bottom: 70px;
+    align-self: flex-end;
+}
+
+.container-img3 {
+    width: 43%;
+    height: 43%;
+    margin-bottom: 70px;
+}
+
+.container-img4 {
+    width: 43%;
+    height: 37%;
+    margin-bottom: 70px;
+    align-self: flex-end;
+}
+
+.container-img5 {
+    width: 43%;
+    height: 43%;
+    margin-bottom: 70px;
+}
+
+.container-img6 {
+    width: 37%;
+    height: 40%;
+    margin-bottom: 70px;
+    align-self: flex-end;
+}
+
+.container-img7 {
+    width: 53%;
+    height: 50%;
+    margin-bottom: 70px;
+}
+
+.container-img8 {
+    width: 43%;
+    height: 37%;
+    margin-bottom: 70px;
+    align-self: flex-end;
+}
+
+.container-img9 {
+    width: 33%;
+    height: 33%;
+    margin-bottom: 70px;
+    margin-left: 40px;
+}
+
+.container-img10 {
+    width: 35%;
+    height: 35%;
+    margin-bottom: 70px;
+    align-self: flex-end;
+}
+
+.container-img11 {
+    width: 35%;
+    height: 35%;
+    margin-bottom: 70px;
+    margin-left: 20px;
+}
+
+.container-img12 {
+    width: 33%;
+    height: 33%;
+    margin-bottom: 70px;
+    align-self: flex-end;
+}
+
+.container-img13 {
+    width: 35%;
+    height: 35%;
+    margin-bottom: 70px;
+    margin-left: 20px;
+}
+
+
+/* MAIN FASHION */
+
+.main-fashion-container {
+    /* height: 100vh; */
+    margin-top: 90px;
+    margin-bottom: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.main-fashion-container h2{
+    font-size: 60px;
+    font-weight: bolder;
+    transform: scaleY(1.5);
+    padding: 15px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.fc-img1, .fc-img2, .fc-img3, .fc-img4, .fc-img5{
+    width: 130px;
+    height: 180px;
+    background-color: slateblue;
+    background-size: cover;
+    position: absolute;
+    display: none;
+    z-index: 800;
+}
+
+.fc-img1{
+    background-image: url("../img/img1.jpg");
+    translate: 80px -150px;
+}
+.fc-img2{
+    background-image: url("../img/img2.jpg");
+    translate: 180px -150px;
+}
+.fc-img3{
+    background-image: url("../img/img3.jpg");
+    translate: 128px -150px;
+}
+.fc-img4{
+    background-image: url("../img/img4.jpg");
+    translate: 380px -150px;
+}
+.fc-img5{
+    background-image: url("../img/img5.jpg");
+    translate: 195px -150px;
+}
+
+
+.fc-1:hover {
+    .fc-img1{
+        display: block;
+    }
+}
+.fc-2:hover {
+    .fc-img2{
+        display: block;
+    }
+}
+.fc-3:hover {
+    .fc-img3{
+        display: block;
+    }
+}
+.fc-4:hover {
+    .fc-img4{
+        display: block;
+    }
+}
+.fc-5:hover {
+    .fc-img5{
+        display: block;
+    }
+}
+
+
+/* MAIN INFO */
+
+.main-info-brand {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    width: 99vw;
+}
+
+.info-brand-img1 {
+    width: 13vw;
+    height: 28vh;
+    translate: 280px 45px;
+    z-index: 800;
+}
+
+.info-brand-title {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 145px;
+    font-weight: bolder;
+    transform: scaleY(1.5);
+    /* margin-top: 265px; */
+    /* display: block; */
+    /* vertical-align: baseline; */
+    white-space: nowrap;
+    /* overflow: hidden; */
+
+    position: relative;
+    translate: 0px -20px;
+    animation-name: titulo_tras;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.info-brand-img2 {
+    width: 18vw;
+    height: 23vh;
+    translate: -120px -85px;
+    z-index: 800;
+    align-self: flex-end;
+}
+
+/* MHAT WHAT WE DO */
+
+.main-whatWeDo-container {
+    /* background-color: slateblue; */
+    display: flex;
+    flex-direction: column;
+    width: 74.5vw;
+    font-family: 'Bebas Neue', sans-serif;
+    align-self: center;
+    justify-self: center;
+    margin-left: 50px;
+    margin-top: 160px;
+}
+
+.wwd-c1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 48px;
+}
+
+.wwd-c1 h2 {
+    /* font-weight: bolder; */
+    transform: scaleY(1.6);
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.wwd-c1 p {
+    font-size: 11px;
+    text-transform: lowercase;
+    font-family: 'Arsenal', sans-serif;
+    width: 78%;
+}
+
+
+.wwd-c2 {
+    margin-top: 80px;
+}
+
+/* MAIN WALDEK */
+
+.main-waldek-container {
+    width: 74.5vw;
+    height: 60vh;
+    /* background-color: violet; */
+    align-self: center;
+    justify-self: center;
+    margin-left: 50px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+.waldek-c1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.wc-left {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arsenal', sans-serif;
+}
+
+.wc-left h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 70px;
+    transform: scaleY(1.6);
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+
+.wc-left h5 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.wc-left p {
+    font-size: 11px;
+}
+
+.wc-right  {
+    background-color: greenyellow;
+    height: 55vh;
+
+}
+
+.wc-right img {
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* WORKED */
+
+.main-worked-container {
+    width: 74.5vw;
+    display: flex;
+    flex-direction: column;
+    /* background-color: slateblue; */
+    align-self: center;
+    justify-self: center;
+    margin-left: 50px;
+    margin-top: 155px;
+}
+
+.worked-c1 h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 70px;
+    transform: scaleY(1.6);
+    margin-bottom: 15px;
+}
+
+.waldek-c2 h3 {
+    font-family: 'Arsenal', sans-serif;
+    font-weight: bolder;
+    font-size: 11px;
+    margin-bottom: 40px;
+}
+
+.worked-c3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+
+.worked-c4-container {
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: bolder;
+    font-size: 12px;
+
+}
+
+.worked-c4-container p {
+    border-bottom: 2px solid rgba(200, 200, 200, .7);
+    padding: 5px;
+    width: 90%;
+}
+
+.table-top {
+    border-top: 2px solid rgba(200, 200, 200, .7);
+}
+
+.wc4-c3 p {
+    padding-right: 0;
+}
+
+/* INFO FASHION SHOWS */
+
+.main-ifshow-container {
+    width: 74.5vw;
+    margin-left: 50px;
+    /* background-color: gray; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    /* gap: 30px; */
+    align-self: center;
+    /* position: relative; */
+    justify-self: center;
+    margin-top: 120px;
+}
+
+.ifshow-c1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-items: start;
+}
+
+.c1-sticky {
+    position: sticky;
+    top: 110px;
+}
+
+.ifshow-c1 h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 95px;
+    transform: scaleY(1.6);
+    margin-top: 8px;
+    margin-bottom: 40px;
+    /* position: sticky;
+    top: 110px; */
+}
+
+.ifshow-c1 p {
+    font-family: 'Arsenal', sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+    width: 80%;
+}
+
+.ifshow-c1 h3 {
+    font-family: 'Arsenal', sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: 25px;
+    letter-spacing: 2px;
+}
+
+.ifshow-c2 {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+}
+
+.ifshow-c2 img {
+    padding-bottom: 100px;
+}
+
+
+/* ALL WE WON */
+
+.main-aww-container {
+    width: 74.5vw;
+    margin-left: 50px;
+    /* background-color: beige; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    /* gap: 30px; */
+    align-self: center;
+    /* position: relative; */
+    justify-self: center;
+    margin-top: 120px;
+
+}
+
+.aww-c1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-items: start;
+}
+
+.aww-sticky {
+    position: sticky;
+    top: 110px;
+}
+
+.aww-c1 h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 95px;
+    transform: scaleY(1.6);
+    margin-top: 8px;
+    margin-bottom: 40px;
+    /* position: sticky;
+    top: 110px; */
+}
+
+.aww-c1 p {
+    font-family: 'Arsenal', sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+    width: 80%;
+}
+
+.aww-c2 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arsenal', sans-serif;
+    font-size: 22px;
+    
+}
+
+.aww-c2-section {
+    border-bottom: 2px solid rgba(200, 200, 200, .7);
+
+}
+
+.aww-c2 p {
+    padding: 20px 0;
+    width: 80%;
+}
+
+.aww-first {
+    border-top: 2px solid rgba(200, 200, 200, .7);
+}
+
+
+/* CLIENTS */
+
+.main-clients-container {
+    display: flex;
+    flex-direction: column;
+    /* background-color: gray; */
+    width: 74.5vw;
+    margin-left: 50px;
+    align-self: center;
+    justify-self: center;
+    margin-top: 130px;
+}
+
+.clients-c1 h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 95px;
+    transform: scaleY(1.6);
+    margin-top: 8px;
+    margin-bottom: 40px;
+
+}
+
+.clients-c2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    font-family: 'Arsenal', sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+.clients-c2-table p {
+    padding: 10px 0px;
+    border-bottom: 2px solid rgba(200, 200, 200, .7);
+    width: 80%;
+}
+
+.cc2-table {
+    border-top: 2px solid rgba(200, 200, 200, .7);
+}
+
+.main-info-final {
+    display: flex;
+    flex-direction: column;
+    width: 98vw;
+}
+
+.main-title-footer {
+    margin-top: 130px;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px;
+    font-weight: bolder;
+    transform: scaleY(1.5);
+    white-space: nowrap;
+    position: relative;
+    /* translate: 0px -20px; */
+    animation-name: titulo_tras;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+
+/* CONTACT US */
+
+.main-contact-container{
+    width: 74.5vw;
+    margin-left: 50px;
+    /* background-color: beige; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    /* gap: 30px; */
+    align-self: center;
+    /* position: relative; */
+    justify-self: center;
+    margin-top: 120px;
+    margin-bottom: 170px;
+}
+
+.contact-c1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-items: start;
+}
+
+.contact-c1 h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 95px;
+    transform: scaleY(1.6);
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+
+.contact-c2 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arsenal', sans-serif;
+    font-size: 24px;
+    
+}
+
+.contact-c2-section {
+    border-bottom: 2px solid rgba(200, 200, 200, .7);
+    padding: 20px 0;
+    width: 80%;
+
+}
+
+
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-wrap: wrap;
+    align-self: center;
+    align-content: center;
+    /* justify-content: center; */
+    width: 75%;
+    margin-bottom: 100px;
+}
+
+.footer-nav {
+    height: 8vh;
+}
+
+
+/* ANIMACIONES */
+
+@keyframes rotarLogo {
+
+    to{
+        transform: rotate(10turn)
+    }
+    
+}
+
+@keyframes titulo_tras {
+
+    /* 0% {
+        transform: translate(1rem)
+    }*/
+    from {
+        translate: 0;
+    }
+    to {
+        /* transform: translate(-1000px) */
+        translate: -4030px;
+    } 
+
+    /* 10%{
+        left: 100;
+    }
+    20%{
+        left: -200px;
+    }
+    30%{
+        left: -300px;
+    }
+    40%{
+        left: -400px;
+    }
+    50%{
+        left: -500px;
+    }
+    60%{
+        left: -600px;
+    }
+    70%{
+        left: -700px;
+    }
+    80%{
+        left: -800px;
+    }
+    90%{
+        left: -900px;
+    }
+    100%{
+        left: -1000px;
+    } */
+
+}
+
+
+/* MEDIA QUERYS */
+
+@media only screen and (max-height: 700px) {
+
+    .main-title {
+        /* background-color: slateblue; */
+        width: 98vw;
+        height: 55%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        top: 100px;
+    }
+
+
+    .footer-nav {
+        height: 10vh;
+    }
+
+    .main-info-brand {
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        width: 98vw;
+    }
+
+    .info-brand-title {
+        font-size: 140px;
+        translate: 0px 14px;
+    }
+
+    .wc-right img {
+        width: 100%;
+    }
+
+    .label-fixed, .label-fixed-2 {
+        bottom: 45px;
+    }
+
+    .main-contact-container{
+        margin-bottom: 165px;
+    }
+
+    .header-contact {
+        position: relative;
+        /* top: 10px; */
+    }
+}

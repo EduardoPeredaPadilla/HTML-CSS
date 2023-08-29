@@ -1,0 +1,41 @@
+/*  Background 
+
+    + background-color: color
+
+    + background-image: url()
+
+    + background-size: x, y, auto, cover, contain
+
+    + background-position: left - top - bottom - right - center ++ left - top - bottom - right - center
+
+    + background-attachment: scroll | fixed | inherit
+
+    + background-clip: border-box | padding-box | content-box
+        Recorta la imagen a partir de border, padding o content
+
+    + background-origin: origen de la foto (valores de arriba)
+        Crea la imagen a partir de border, padding o content
+
+*/
+* {
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 100;
+}
+
+.container {
+    background: #86f;
+    padding: 30px;
+    /* border: 2px solid transparent; */
+    /* width: 350px; */
+    height: 200px;
+    margin: 40px 0;
+    background-image: url(https://cdn.wallpapersafari.com/73/31/kqtQKB.jpg);
+    background-size: cover; 
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    /* background-origin: content-box;
+    background-position: right bottom; */
+    background-attachment: fixed;
+}
+
+

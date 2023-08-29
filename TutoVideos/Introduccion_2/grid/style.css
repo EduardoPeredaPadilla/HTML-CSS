@@ -1,0 +1,97 @@
+/*  GRID
+
+    Conceptos Básicos
+
+    + Grid. Es un estilo de Layout. Valor de la propiedad display
+
+    + Grid container. Es el contenedor, cuando le damos a un elemento display: grid; se comporta como bloque pero sus elementos(items) adquiern las propiedades de grid (grilla)
+
+    + Grid item. Cada uno de os elemntos que coloquemos dentro del container, no necesariamente el mismo número de celdas (grid cell)
+
+        Hijos directos del Grid container. Los hijos delitem no son grid items
+    
+    + Grid cell. Dibujo teórico que se hace con columnas y filas
+
+    + Grid tracks(Column y Row). Toda la fila (row) o toda la columna (column)
+
+    + Grid Area. Las definimos nosotros, deberían ocupar más de una celda, deben ser consecutivas
+
+    + Grid Line(Column Line y Row Line). Las líneas que dividen filas y columnas, ejemplo en una grilla de 3 filas y 5 columnas, tendríamos 4 rows line y 6 column lines
+*/
+
+/*  Propiedades que se aplican al grid-container
+
+    Cuando declaramos un elemento como display: grid; por defecto crea solo una fila y una columna, y nosotros debemos decirla cuantas filas y cantas columnas queremos con grid-template-rows y grid-template-columns
+
+    + grid-template-rows. Le decimos cuantas filas y de que medida
+
+    + grid-template-columns. Le decimos cuantas columnas y de que medida
+
+    Unidades : auto y fr
+
+    + grid-row-gap. Es com ouna especia de margin entre las celdas
+
+    + grid-column-gap
+
+    + grid-gap: row column
+
+*/
+
+/*  Propiedades que se aplican a los ggrid-items
+
+    Para que ocupe un mayor espacio el item
+
+    + grid-row-start
+
+    + grid-row-end
+
+    + grid-column-start
+
+    + grid-column-end
+
+    + grid-row. Abrevia grid-row-start y grid-row-end
+
+    + grid-column. Abrevia grid-column-start y grid-column-end
+
+*/
+
+* {
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 100;
+}
+body{
+    background: radial-gradient(circle, #fff, #bbb);
+    padding: 15px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-rows: 150px 150px 150px;
+    /* grid-template-columns: 150px 150px 150px 1fr; */
+    /* Podemos hacer lo mismo con la funciòn repeat(repeticiones, medida/s) asì : */
+    grid-template-columns: repeat(3, 150px) 1fr;
+    border: 3px solid #000;
+    grid-gap: 10px;
+    background-color: #333;
+}
+
+.grid-item{
+    border: 1px solid #000;
+    background-color: #999;;
+}
+
+/* con el first-child elegimos el primer elemento */
+.grid-item:first-child {
+    background: #900;
+    /* grid-column: 1 / 3; */
+    /* grid-row: 1 / 3; */
+    /* Con la propiedad span le decimos cuantas columnas o filas va ocupar apartir de que fila o columna */
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+/* Con :nth-child("colocamos el nùmero del elemento que queremos impactar")  */
+.grid-item:nth-child(2){
+    background: #090;
+    grid-column: 3 / 5;
+}

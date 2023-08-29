@@ -1,0 +1,219 @@
+/*RESETEAMOS LOS ESTILOS*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.body-index {
+    width: 100%;
+    height: 100vh;
+    /* height: 1000px; */
+    background-image: url(../img/patio.jpg);
+    position: static;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* object-fit: cover; */
+    flex: 1;
+    /* flex-grow: 1; */
+}
+
+/* Body Menu */
+.body-menu{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+/* Mené de navegación */
+header{
+    width: 100%;
+    height: 10%;
+    /* height: 80px; */
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.div-header{
+    width: 50%;
+    top: 0%;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: fixed;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.div-header ul {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+}
+
+.div-header ul li{
+    padding: 10px;
+    width: max-content;
+    
+}
+
+.div-header ul li a{
+    color: gray;
+    text-decoration: none;
+}
+
+.div-header ul li a:hover{
+    /* border-bottom: 1px solid rgb(155, 62, 178) */
+    text-shadow: 3px 3px 7px yellow;
+    color: white;
+    transition: .5s;
+} 
+
+.img-menu {
+    width: 50px;
+    border-radius: 50%;
+}
+
+/* Contenido */
+section {
+    width: 100%;
+    height: 100vh;
+    /* top: 10%; */
+    /* flex: 1; */
+    /* height: 800px; */
+    /* display: flex; */
+    /* display: block; */
+}
+
+.div-container-index {
+    width: 100%;
+    height: 69vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /* padding-bottom: 480px; */
+}
+
+.div-container-index img {
+    width: 40%;
+    /* position: fixed; */
+}
+
+
+.div-container-img {
+    align-self: flex-end;
+    width: 15%;
+    height: auto;
+    margin-left: 85%;
+    margin-top: -18%;
+}
+
+/* Contenido Menú */
+
+section h2 {
+    padding-left: 45px;
+    text-shadow: 3px 3px 7px yellow;
+    color: white;
+}
+
+
+
+.div-container-menu {
+    font-size: 10px;
+    padding-top: 20px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+}
+
+
+
+.div-card {
+    display: flex;
+    /* padding-left: 45px; */
+    /* color: black; */
+    opacity: 0.8;
+}
+
+.card{
+    margin-left: 45px;
+    background-color: grey;
+}
+
+.card-img-top{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+
+.div-card button {
+    color: yellow;
+    border-color: yellow;
+}
+
+.div-card button:hover {
+    color: black;
+    background-color: yellow;
+    border-color: yellow;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 120px;
+    /* display: block; */
+    position: static;
+    bottom: 0%;
+    margin-top: auto;
+}
+
+
+.div-footer {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding: 10px 50px 1px 50px;
+    opacity: 0.7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    color: #dbdb0df1;
+}
+
+.sec-footer{
+    display: inline;
+
+}
+
+.sec-footer-social i{
+    padding: 0 23px 0 0;
+    color: #dbdb0df1;
+}
+
+.sec-footer{
+    font-size: 13px;
+}
+
+#btn_fixed{
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 50px;
+    color: rgb(77, 178, 169);
+}

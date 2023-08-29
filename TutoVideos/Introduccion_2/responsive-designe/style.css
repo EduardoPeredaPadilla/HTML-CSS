@@ -1,0 +1,81 @@
+/*  RESPONSIVE DESIGNE
+
+    Técnica para adaptar el contenido de nuestra página web a todas las resoluciones
+
+    Layout. Distribución de los elemtos en la página
+
+    + Estructutras Flexibles (contenedores flexibles, imagenes y videos flexibles)
+
+    + Media Queries
+
+    + @Media se usa en consultas de medios para aplicar diferentes estilos para diferentes tipos / dispositivos de medios. Consulta y valida =
+
+        - ancho y alto de la ventana gráfica
+
+        - ancho y alto del dispositivo
+
+        - orientación (¿La tableta / teléfono está en modo horizontal o vertical?)
+
+        - resolución
+
+        + all. Apto para todos los dispositivos
+
+        + print. Destinado a material impreso y visualización de documentos en una pantalla en el modo de vista previa de impresión
+
+        + screen. Destinado principalmente a las pantallas
+
+        + speech. Destinado a sintetizadores de voz
+
+    + Operadores AND | OR
+
+    + Orientación: landscape (cuando es más ancho que largo (escritotios)) y portrait (cuando es más largo que ancho (móviles))
+
+*/
+
+/*  Movil-first. Se crea para moviles y despues para resoluciones más grandes, ablet, escrotorio
+
+    Texto-first. De ecritorio a movil
+
+    Content-fist. Se estructura a partir del contenido
+
+
+*/
+
+* {
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 100;
+}
+
+.div-responsive {
+    background: #c95;
+}
+
+@media screen and (min-width: 400px) and (max-width: 650px) {
+
+    .div-responsive {
+        background: red;
+    }
+
+}
+@media screen and (min-width: 650px) and (max-width: 800px) {
+
+    .div-responsive {
+        background: green;
+    }
+
+}
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+
+    .div-responsive {
+        background: orange;
+    }
+
+}
+@media screen and (min-width: 1200px) {
+
+    .div-responsive {
+        background: black;
+        color: white;
+    }
+
+}

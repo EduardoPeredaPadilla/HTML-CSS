@@ -1,0 +1,40 @@
+/*  Colores
+    Las diferenctes formas de definir colores son
+
+    + Color name. Por el nombre del color, red, pink, yellow, etc
+      no muy recomendablñe pues el navegador elige que tono del color
+
+    + Hexadecimal. #f00 ... Es recomendable pues no importa en que navegador será siempre ese color especifico. Es un sistema de 16 unidades. Del 1 al 10 y de la A a la f.
+      Se inicia poniendo #, por ejemplo #fff, f es el valor máximo, es como poner rgb(255,255,255)
+      Se pueden poner hasta 6 caracteres. Se ponen 3 o 6 caracteres, si se ponen 4 parámetros, eel cuarto ews la opacidad
+
+
+    + RGB (Red, Green, Blue) van del 0 al 255 cada uno, rgb(0,0,0) = Negro, rgb(255,255,255)= Blanco
+
+    + RGBA . Es como el rgb pero con opacidad, el cuarto parámeto es la opacidad y va del 0 al 1
+      a es de Alpha, 0 es totalmente transparente
+
+    + HSL
+
+    + HSLA
+*/
+
+* {
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+body{
+    background-color: black;
+}
+
+.caja{
+    margin: 45px;
+    width: 200px;
+    height: 300px;
+    border: 5px solid #f00;
+    /* background-color: rgba(100, 0, 200, .5); */
+    background-color: #48e;
+}
+

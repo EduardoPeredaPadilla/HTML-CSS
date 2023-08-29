@@ -1,0 +1,41 @@
+/* Propiedades de cajas */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+    /* box-sizing: border-box; */
+}
+
+/* Otras Propiedades */
+/* Outline 
+    ShortHand (Propiedad acortada)
+    Es como un borde pero que no ocupa un espacio real en el DOM (Document Object Model)
+    
+*/
+
+/* .caja1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: auto;
+    outline: 10px solid blue;
+}
+
+.caja2{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    margin: auto;
+} */
+
+/* Position */
+
+
+div {
+    width: 120px;
+    height: 120px;
+    display: block;
+    background: yellow;
+}

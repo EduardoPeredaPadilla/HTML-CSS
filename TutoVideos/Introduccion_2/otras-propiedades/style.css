@@ -1,0 +1,27 @@
+/*  Otras propiedades, funciones y selectores curiosos de CSS
+
+    + Direction: ltr (left to right) | rtl | initial | inherit; es como el text align
+
+    + Letter Spacing: ESPACIO ENTRE LAS LETRAS
+
+    + scroll-behavior. SE LE DA A TODO EL CONTENIDO Y CON UNA ETIQUETA A PARA QUE TE LLEVE A ESE PUNTO DE LA PAGINA
+
+    + user-selected: none; Para evitar que el usuario seleccione y copie el texto
+
+    + text.shadow
+
+
+
+*/
+
+* {
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 100;
+}
+
+.container {
+    padding: 20px;
+    background: #59f;
+    font-size: 20px;
+    letter-spacing: 40PX;
+}

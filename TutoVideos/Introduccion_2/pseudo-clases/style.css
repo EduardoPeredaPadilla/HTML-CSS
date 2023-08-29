@@ -1,0 +1,83 @@
+/* Pseudo-Clases
+    Escuchas de eventos
+*/
+
+/* 
+    :hover. Cuando el puntero del mouse pasa sobre el objeto del DOM
+    Funciona en cualqueir elemento del DOM
+*/
+
+* {
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.caja1{
+    height: 200px;
+    width: 200px;
+    background: slateblue;
+    /* transition: backgrond 0.2s, height 1s, wdth 1s; */
+    transition: all 1s;
+}
+
+.caja1:hover{
+    background: darkslateblue;
+    height: 300px;
+    width: 300px;
+    color: white;
+}
+
+button{
+    color: black;
+    background-color: coral;
+}
+
+button:hover{
+    color: white;
+    background: slateblue;
+}
+
+a{
+    margin: 30px;
+    padding: 20px;
+    display: block;
+    
+}
+
+a:hover{
+    padding: 20px;
+    background: slateblue;
+    color: #000;
+}
+
+/* :visited. Si no está visitado el enlace le damo sun color
+
+*/
+a:visited{
+    color: coral;
+}
+
+/* :link. la etiqueta a
+
+*/
+
+a:link{
+    color: red;
+}
+
+/* :active. Cuando le damos clic sin soltar, en un input solo al darle clic pues se queda el foco en el elemento
+
+*/
+
+a:active{
+    background-color: blue;
+}
+
+/* :lang() . Es una función. necesita un parámetro, modifica el lenguaje, es el parametro el lenguaje, es, en, etc, y se tiene que poner en la etiqueta de html como aatributo de la misma
+caso no se usa
+*/
+
+
+
+

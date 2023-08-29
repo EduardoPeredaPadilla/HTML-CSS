@@ -1,0 +1,38 @@
+/*  DISPLAY
+    Tipos de display:
+
+    + block. Ocupa todo el ancho del contenedor 
+    + inline. Ocupa el ancho de su contenido
+
+    + inline-block. Podemos modificar las dimesiones de la caja y poner uno junto a otro
+
+    + flex
+    + grid
+
+    + inline-flex
+    + inline-grid
+ */
+
+ * {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: 10px solid red;
+    background: yellow;
+    display: inline-block;
+}
+
+b{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border: 10px solid red;
+    background: yellow;
+    display: block;
+}

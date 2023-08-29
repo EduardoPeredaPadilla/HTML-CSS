@@ -1,0 +1,52 @@
+/* Pseudo-Elemento 
+    No forman parte del DOM los que requieren la etiqueta content
+    *solo firts-line o first-letter
+    
+*/
+
+/* ::after. Hijo del contenedor al que se aplica, content (necesario) 
+
+
+*/
+
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+form{
+    margin: 100px auto;
+    display: block;
+    background-color: #555;
+    padding: 100px 10px;
+    width: 90%;
+    text-align: center;
+}
+
+b{
+    padding: 6px;
+    width: 100%;
+}
+
+b::before{
+    content: "Texto antes de ...";
+    color: blueviolet;
+}
+
+b::after{
+    content: "... Texto después de";
+    color: aqua;
+    background: black;
+}
+
+/* Pseudo-Clases
+
+*/
+
+/* 
+    :hover. Cuando el puntero del mouse pasa sobre el objeto del DOM
+
+*/
+
+

@@ -1,0 +1,40 @@
+/*  Object-Fit. Propiedad que se aplica a las imagenes principalmente
+
+*/
+
+/* contain. Hace que la imagen se ajuste al contenedor, deja espacio 
+
+*/
+
+/* cover. Se ajusta al contendor en todo el espacio
+
+*/
+
+/* none. usa las propiedades por defecto 
+
+*/
+
+/* scale-down. Se ajusta a contain o none elque sea menor o mejor se ajuste al contenedor
+
+*/
+
+
+
+* {
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.caja{
+    margin: 25px;
+    width: 600px;
+    height: 900px;
+}
+
+.caja img{
+    height: 100%;
+    width: 100%;
+    border: 2px solid red;
+    object-fit: cover;
+}

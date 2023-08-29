@@ -1,0 +1,42 @@
+/* Pseudo-Elemento 
+    No forman parte del DOM los que requieren la etiqueta content
+    *solo firts-line o first-letter
+    
+*/
+
+/* ::placeholder. 
+
+
+*/
+
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+form{
+    margin: 100px auto;
+    display: block;
+    background-color: #555;
+    padding: 20px;
+    width: 50%;
+}
+
+input{
+    padding: 6px;
+    width: 100%;
+    
+}
+
+input::placeholder{
+    color: blueviolet;
+}
+
+/* ::selection
+
+*/
+input::selection{
+    color: red;
+    background-color: black;
+}

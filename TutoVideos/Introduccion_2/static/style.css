@@ -1,0 +1,50 @@
+/* Position 
+    Posiciona los elemntos y adquiere nuevas propiedades    
+    Cuando se dice que un elemento está posicionado, significa que va afectar el flujo html
+*/
+
+/* 
+    +static. Es como si no estuviera posisiconado, no adquiere propiedades
+
+    +relative. El elemento adquiere 5 propiedades nuevas:
+        -top. Se sobrepone a bottom
+        -left. Se sobrepone a right
+        -right
+        -bottom
+        Conserva el espacio en el DOM, pero visualmente cambia de lugar, el punto de referencia es el espacio reservado
+        -zindex. El valor más alto de zindex se muestra al frente
+            Conflicto entre Contenedores Padre y Contenedores Hijo
+            La única manera de poner al contenedor hijo por debajo del padre es poneiendo en el hikjo un zindex -1 y no darle zondexx al padre, solo position relative
+ */
+
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+div {
+    width: 120px;
+    height: 120px;
+    display: block;
+    background: yellow;
+}
+
+.caja1 {
+    background-color: red;
+    top: 20px;
+}
+.caja2 {
+    background-color: green;
+    position: relative;
+    top: 60px;
+    left: 40px;
+    z-index: 1;
+}
+.caja3 {
+    background-color: blue;
+    position: relative;
+}
+.caja4 {
+    background-color: violet;
+}

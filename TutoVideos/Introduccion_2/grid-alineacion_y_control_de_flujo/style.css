@@ -1,0 +1,120 @@
+/*  Alineaciòn y control de Flujo con Grid
+
+    + Diferencia con Flex. La alineaciòn es dentro de ada celda y no alineaciòn total del flex container. 
+    
+    + Cada celda serìa un "flex container"
+
+
+    + Propiedades del grid-container
+
+
+    + justify-items (horizontalmente)
+
+    + align-items (verticalmente)
+
+
+    + strech(default) - start - center - end
+
+
+    + place-items: align-items justify-items
+
+
+*/
+
+/*  Alineaciòn de filas y columnas
+
+    + justify-content (horizontamente)
+
+    + align-content (verticalmente)
+
+
+    + strech(default) - start - center - end
+
+    + Màs las de flex:
+        - space-around
+        - space-between
+        - space-evenly
+
+*/
+
+/*  Aplicadoal grid item
+
+    + align-self
+
+    + justify-self
+
+    + place-self align-self justify-self
+
+
+    + strech(dafault) - start - center - end
+
+    + order (igual que en flex), el de mayor valor lo manda al final
+
+*/
+
+* {
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 100;
+}
+
+body{
+    background: radial-gradient(circle, #fff, #bbb);
+    padding: 15px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    border: 3px solid #000;
+    grid-gap: 10px;
+    background-color: #333;
+    grid-auto-flow: dense;
+    /* Asì alineamos los items = */
+    /* justify-items: center;
+    align-items: center; */
+    /* Asì alineamos las filas y columnas */
+    /* columnas */
+    /* justify-content: center; */
+    /* filas */
+    /* align-content: center; */
+    height: 600px;
+    align-items: center;
+    justify-items: center;
+    transition: all 1s;
+}
+
+/* las del flex */
+/* .grid-container:hover{
+    justify-content: space-evenly;
+    align-content: space-evenly;
+} */
+
+.grid-item{
+    border: 1px solid #000;
+    background-color: #999;
+    font-size: 30px;
+    padding: 50px;
+}
+
+.grid-item:first-child{
+    align-self: start;
+    justify-self: start;
+}
+
+.grid-item:nth-child(5) {
+    justify-self: end;
+}
+.grid-item:nth-child(6) {
+    justify-self: start;
+}
+
+
+.grid-item:nth-child(4) {
+    align-self: end;
+}
+.grid-item:nth-child(7) {
+    align-self: start;
+}

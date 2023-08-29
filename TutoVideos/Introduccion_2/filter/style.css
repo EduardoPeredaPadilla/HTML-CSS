@@ -1,0 +1,47 @@
+/*  FILTER
+
+    + none
+
+    + blur(px). Desenfoca, se le dan unidades de medida como px, em, rem. No aplican %
+
+    + brightness(0-1). El brillo en una escala del 0 al 1, siendo 1 el brillo actual y 0 todo negro
+
+    + contrast(number or %). Es el contraste, lo contrario a brillo. Siendo 0 todo en gris, sin contraste, y 1 el contraste normal. Puede darse en % siendo | el 100%, pero podemos darle 1300% para un mayor contraste
+
+    + drop-shadow(medidas). Sombra, es como un box-shadow
+
+    + grayscale(%). Da un filtro gris a la imagen, siendo 0 sin filtro
+
+    + hue-rotate(deg). Rota la gama de colores
+
+    + invert(%). Invierte los colores
+
+    + opacity(). Opaca la imagen. Funciona del 0 al 1
+
+    + saturate(%). Satura el elemento
+
+    + sepia(). Lo convierte en sepia. Va del 0 al 1
+
+    + url("filters.svg#filter-id");
+
+
+*/
+
+
+* {
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 100;
+}
+
+div {
+    /* filter: blur(1px); */
+    /* filter: brightness(0.5); */
+    /* filter: contrast(1.3); */
+    /* filter: drop-shadow(10px 10px 5px #000); */
+    /* filter: grayscale(0); */
+    /* filter: hue-rotate(100deg); */
+    /* filter: invert(10%); */
+    /* filter: opacity(1); */
+    /* filter: saturate(400%); */
+    filter: sepia(1);
+}

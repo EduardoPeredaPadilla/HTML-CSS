@@ -1,0 +1,139 @@
+/**/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body.body-index{
+    width: 100%;
+    background-image: url(../img/patio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.nav-container{
+    top: 0%;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: fixed;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.nav-brand{
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+/*Contenedor principal de la barra de navegación*/
+.nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0 0 0;
+    margin: 0 auto;
+}
+
+/* Menu de navegación Left*/
+.nav-main ul{
+    display: flex;
+}
+
+.nav-main ul li{
+    padding: 10px;
+    width: max-content;
+    
+}
+
+.nav-main ul li a{
+    padding: 3px;
+    padding-top: 40px;
+}
+
+.nav-main ul li a:hover{
+    /* border-bottom: 1px solid rgb(155, 62, 178) */
+    text-shadow: 3px 3px 7px yellow;
+    color: white;
+    transition: .5s;
+}
+
+a{
+    color: gray;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.iniciar{
+    text-align: center;
+    padding-top: 70px;
+}
+
+.iniciar img{
+    width: 40%;
+}
+
+/*Imagen fondo*/
+
+.img-back{
+    object-fit: cover;
+    width: 50%;
+    height: auto;
+}
+
+/*Footer*/
+
+.footer{
+    background-color: #313b48;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 40px 90px 0px 90px;
+    color: #5373c0;
+    
+}
+
+.img-end{
+    width: 25%;
+    height: 25%;
+    padding-top: 10px;
+    margin-left: 77%;
+}
+
+.sec-footer{
+    display: inline;
+
+}
+
+
+.sec-footer-social i{
+    padding: 0 23px 0 0;
+    color: #5373c0;
+}
+
+
+.sec-footer_{
+    font-size: 11px;
+}
+
+#btn_fixed{
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 50px;
+    color: rgb(77, 178, 169);
+}

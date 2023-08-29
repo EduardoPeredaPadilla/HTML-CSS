@@ -1,0 +1,66 @@
+/*  TRANSITION
+
+    Es una propiedad que nos permite realizar transiciones dentro de los elementos.
+    Mostrar el progrso de un cambio
+
+    + transition-property/ies - all - none
+
+    + transition-duration: duration/s
+
+    + transition-delay/s
+
+    + transition-timing-function: linear | ease | ease-in | ease-out | ease-in-out | step-start | step-end | steps(int, start|end) | initial | inherit;
+
+    + transition:
+
+
+*/
+
+* {
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 100;
+}
+
+.container {
+    background: #86f;
+    padding: 20px 5px;
+}
+
+.caja {
+    background: #025;
+    width: 80px;
+    height: 80px;
+    transition-property: left, background;
+    transition-duration: 1s, 3s;
+    /* transition-delay: 1s; */
+    margin: 20px;
+    /* el inherit hereda a uss hijos su background en este ejemplo */
+    /* background: inherit;
+    border: 1px solid #000; */
+    position: relative;
+    left: 0;
+
+}
+
+.container:hover > .caja {
+    /* background: lightgreen; */
+    left: 80%;
+    background: #fff;
+}
+
+.caja:first-child {
+    transition-timing-function: linear;
+}
+
+.caja:nth-child(2) {
+    transition-timing-function: ease;
+}
+.caja:nth-child(3) {
+    transition-timing-function: ease-in;
+}
+.caja:nth-child(4) {
+    transition-timing-function: ease-out;
+}
+.caja:nth-child(5) {
+    transition-timing-function: ease-in-out;
+}

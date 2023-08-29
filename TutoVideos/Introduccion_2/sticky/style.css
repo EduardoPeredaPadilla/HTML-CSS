@@ -1,0 +1,18 @@
+/*  Sticky
+    Es comouna mezcla entre relative y fixed. Conserva el espacio en el DOM
+
+ */
+
+ * {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.caja-fixed{
+    background: red;
+    position: sticky;
+    opacity: .4;
+    /* top: 0; */
+    top: 50px;
+}

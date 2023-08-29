@@ -1,0 +1,98 @@
+/* selector {
+    propiedad: valor;
+ } */
+
+ /* CSS Selectores 
+    Universal - *
+    de tipo - h1, h2, button, etc
+    clases - .titulo-h2 (se coloca un puntop "." seguido del nombre de la clase) ".titulo-h2"
+    ID - #id-element
+    por atributo - podemos crear los atributos y para darle estilo lo ponemos entre [miAtributo="at"]
+    descendiente - elemtos dentro de otro elemeto o clase
+    pseudo clases - :hover
+ */
+/* * {
+    margin: 0px;
+    padding: 0px;
+} */
+
+ h1 {
+    color: red;
+ }
+
+ button {
+    color: blueviolet;
+ }
+
+ .titulo-h2 {
+    color: blueviolet;
+ }
+
+ #id-element {
+    color: cadetblue;
+ }
+
+ [miAtributo="at"] {
+    color: chartreuse;
+ }
+
+ h2 p {
+    color: yellow;
+ }
+
+ p:hover{
+    color: red;
+ }
+
+ /* Especificidad
+    De Mayor a Menor Jerarquía:
+    !Important
+        Elemetos en línea
+            Identificadores ID
+                Clases
+                Pseudo-clases
+                aributos
+                    Elementos
+                    Pseudo-elemetos
+ */
+h2 p {
+    color: grey !important;
+}
+
+/* Metdología BEM
+    Clases; la clase del contenedor con dos guiones bajos y la clase del hijo
+*/
+
+.form__input--active {
+    color: red;
+}
+
+/* Unidades de medida
+    Relativas:
+        Dependen de algo, son variables: rem y em
+        rem tiene como referencia el root
+        em. 1em = 16px por default, pero si al contendor de doy una medida en pixeles, esa unidad en pixeles va valer el em. Ejemplo si al contenedor le doy 20px entonces 1em = 20px
+    Fijas:
+        Pixeles, cm, ml, etc
+*/
+
+*{
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+}
+
+.contact-form {
+    font-size: 25px;
+    /* background-color: #000;
+    width: 50vw;
+    height: 100vh; */
+}
+
+.contact-form__h2 {
+    font-size: 2em;
+    /* font-family: 'Lobster', cursive;
+    line-height: 2;
+    font-weight: 700; */
+    color: red;
+}
+
